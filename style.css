@@ -38,9 +38,8 @@ body {
 }
 
 .inner {
-    width: 1100px;
+    width: 1680px;
     margin: 0 auto;
-    background: #ddd;
 }
 
 header {
@@ -55,6 +54,7 @@ header h1 {
 
 header h1 img {
     width: 280px;
+    margin-left: 280px;
 }
 
 header ul {
@@ -95,6 +95,7 @@ header ul li a {
     text-decoration: none;
     line-height: 48px;
     background: #6c757d;
+    margin-right: 290px;
 }
 
 header ul li a:hover {
@@ -120,23 +121,54 @@ nav ul li a {
     height: 55px;
     padding: 0 35px;
     line-height: 55px;
-    color: rgba(255, 255, 255,.5);
+    color: rgba(255,255,255,.5);
     text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: rgba(255, 255, 255,.75);
+    color: rgba(255,255,255,.75);
 }
 
 .key_visual {
     height: 600px;
-    background: #ff0;
+    background-image: url(img/top-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    position: relative;
 }
 
 .key_visual_content {
+    display: inline-block;
     width: 560px;
     height: 300px;
+    padding: 30px 15px;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 5px;
     background: #fff;
+    box-sizing: border-box;
+    text-align: left;
+    position: absolute;
+    top: 65px;
+    right: 275px;
+}
+
+.key_visual_content h2 {
+    margin-bottom: 15px;
+    font-size: 55px;
+    font-weight: 300;
+}
+
+.key_visual_content p {
+    margin-bottom: 35px;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.key_visual_content .notice {
+    margin: 0;
+    font-size: 13px;
 }
 
 article,aside,details,figcaption,figure,
